@@ -119,16 +119,14 @@ const Index = () => {
                     controls
                     autoPlay
                     muted
-                    poster="/placeholder.svg"
+                    crossOrigin="anonymous"
+                    src="http://192.168.1.133:8080"
                   >
-                    <source src="http://192.168.1.133:8080" type="application/x-mpegURL" />
-                    <p className="text-white text-center p-8">
-                      Ваш браузер не поддерживает воспроизведение видео.
-                      <br />
-                      <a href="http://192.168.1.133:8080" className="text-blue-400 underline">
-                        Открыть поток напрямую
-                      </a>
-                    </p>
+                    Ваш браузер не поддерживает воспроизведение видео.
+                    <br />
+                    <a href="http://192.168.1.133:8080" className="text-blue-400 underline">
+                      Открыть поток напрямую
+                    </a>
                   </video>
                   <div className="absolute bottom-4 left-4 bg-black bg-opacity-75 text-white px-3 py-1 rounded">
                     {activeChannel}
